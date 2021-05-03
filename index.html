@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <header>
+        <!--Header-->
+        <h1>Weather Watcher</h1> <!--Title-->
+        <nav> <!--Navbar with dropdown for popular cities-->
+            <ul>
+                <li>
+                    <a href="#" id="navbarDDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Popular cities...</a>
+                    <ul aria-labelledby="navbarDDown">
+                        <li><a class="dropdown-item city" href="#">Dallas</a></li>
+                        <li><a class="dropdown-item city" href="#">San Francisco</a></li>
+                        <li><a class="dropdown-item city" href="#">New York</a></li>
+                        <li><a class="dropdown-item city" href="#">Austin</a></li>
+                        <li><a class="dropdown-item city" href="#">Seattle</a></li>
+                        <li><a class="dropdown-item city" href="#">Mumbai</a></li>
+                        <li><a class="dropdown-item city" href="#">Atlanta</a></li>
+                        <li><a class="dropdown-item city" href="#">Denver</a></li>
+                        <li><a class="dropdown-item city" href="#">London</a></li>
+                        <li><a class="dropdown-item city" href="#">Hong Kong</a></li>
+                        <li><a class="dropdown-item city" href="#">Tokyo</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section"> <!--Search section-->
+        <div> <!--Search bar div-->
+            <form>
+                <input type="search" placeholder="Enter city or zip code" id="search-bar">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+        <div id="search-history"> <!--Search history div-->
+            <ul id="search-history-list">
+
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="data-section"> <!--Weather data section-->
+        <div id="current-weather"> <!--Current weather-->
+
+        </div>
+        
+        <div id="current-forcast"> <!--Forcast-->
+            
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
