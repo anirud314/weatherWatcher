@@ -100,7 +100,7 @@ var buildCWCard = function(response) { // function builds the current weather ca
 }
 
 var buildForcastCards = function(fResponse) { // Builds forcast cards with 5 forcasts each
-    console.log(fResponse);
+    //console.log(fResponse);
     var weatherForcastDiv = document.getElementById("current-forcast");
     weatherForcastDiv.innerHTML = '';
     for(var i = 1; i <((fResponse.length)-2); i++){ // in order to get next 5 days I had to start at index i and go all the way to 2 before the max length of the array(fResponse.length - 2) 
